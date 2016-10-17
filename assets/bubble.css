@@ -1,0 +1,48 @@
+/* http://www.colourlovers.com/palette/1714968/FORBIDDEN_PLANET */
+
+:root {
+  --main-bg-color: #4D4250;
+  --bot-color: #B66E6F;
+  --bubble-color: #F6D169;
+}
+
+* { box-sizing: border-box }
+
+body {
+  margin: 0;
+  background-color: var(--main-bg-color);
+  font-family: sans-serif;
+}
+
+.arena {
+  font-size: 4vw;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.bot, .bubble {
+  position: absolute;
+  height: 1em;
+  width: 1em;
+  transition: all 0.1s ease-in-out;
+}
+
+.bot {
+  background-color: var(--bot-color);
+}
+.bubble {
+  background-color: var(--bubble-color);
+  border-radius: 50%;
+}
+
+.log {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  color: #fff;
+  padding: 1em;
+  width: 30%;
+  font-family: 'Courier New';
+}
